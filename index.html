@@ -21,16 +21,14 @@
       section {
         color: grey;
         padding: 20px;
+        display: flex; /* display flex is another way of aligning content */
+        flex-direction: row; /* flex direction can be row, column, row-reverse and column-reverse */
       }
 
       div {
         background-color: red;
-        display: inline-block;
-
-        /* width and height have meaning only in case of display: inline block */
-        /* For display: inline => it spans the content */
         width: 100px;
-        height: 80px;
+        margin: auto; /* use margin auto with flex property on parent to align content to center of the page */
       }
 
       body {
