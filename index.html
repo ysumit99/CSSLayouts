@@ -3,70 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lets truly learn CSS!</title>
+    <title>CSS Floats</title>
 
     <style>
-      header {
-        color: white;
-        background-color: black;
-        padding: 20px;
-      }
-
-      section {
-        color: grey;
-        padding: 20px;
-        display: flex; /* display flex is another way of aligning content */
-        flex-direction: row; /* flex direction can be row, column, row-reverse and column-reverse */
-      }
-
-      div {
-        background-color: red;
-        width: 100px;
-        margin: auto; /* use margin auto with flex property on parent to align content to center of the page */
-      }
-
-      body {
+      * {
         margin: 0;
         padding: 0;
       }
-
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-      }
-
-      li {
-        display: inline-block;
-        margin-right: 20px;
-      }
-
-      footer {
-        color: white;
-        background-color: black;
+      .container {
+        background-color: grey;
         padding: 20px;
+      }
+
+      .box {
+        width: calc(25% - 24px);
+        border: 2px solid lightgray;
+        color: white;
+        padding: 10px;
+      }
+
+      .box h2 {
+        color: rgb(0, 255, 76);
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid lightgray;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .clear {
+        clear: both;
       }
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Locations</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-      <h1>Title</h1>
-    </header>
+    <div class="container">
+      <div class="box left">
+        <h2>First</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
 
-    <section>
-      <div>aaaaaa</div>
-      <div>b</div>
-      <div>c</div>
-    </section>
-    <section>Lower Section</section>
+      <div class="box left">
+        <h2>Second</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
 
-    <footer>Footer</footer>
+      <div class="box left">
+        <h2>Third</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+
+      <div class="box left">
+        <h2>Fourth</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+      <div class="clear"></div>
+    </div>
   </body>
 </html>
