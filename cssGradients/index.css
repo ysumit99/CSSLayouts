@@ -24,3 +24,16 @@
     gold 66.666%
   );
 }
+
+#republic-of-congo {
+  width: 400px;
+  height: 267px;
+  margin: 20px auto;
+  background-image: linear-gradient(
+    to bottom right,
+    green 33.3333%,
+    gold 33.3333%,
+    gold 66.6666%,
+    red 66.6666%
+  );
+}
