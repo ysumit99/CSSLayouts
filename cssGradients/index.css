@@ -1,4 +1,4 @@
-#flag {
+#flag-france {
   width: 200px;
   height: 200px;
   background-image: linear-gradient(
@@ -9,5 +9,18 @@
     white 66.66%,
     red 66.66%,
     red
+  );
+}
+
+#flag-germany {
+  width: 400px;
+  height: 267px;
+  margin: 20px auto;
+  background-image: linear-gradient(
+    to bottom,
+    black 33.3333%,
+    red 33.3333%,
+    red 66.6666%,
+    gold 66.666%
   );
 }
