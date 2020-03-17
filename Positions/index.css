@@ -16,21 +16,50 @@ body {
   width: 350px;
   height: 700px;
   border-radius: 30px;
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  box-shadow: 1px 2px 1px gold inset, 2px 10px 3px rgba(149, 165, 166, 0.1);
+}
+
+.phone-body:before,
+.phone-body:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-bg);
+  top: 12px;
+}
+.phone-body:after {
+  top: 25px;
+  left: 125px;
+  width: 8px;
+  height: 8px;
 }
 
 .phone-inner {
   width: 90%;
   height: 80%;
   background: var(--primary-bg);
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
+
+.phone-inner:before {
+  content: "";
+  width: 50px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: blue;
+  position: absolute;
+  top: -38px;
+  background: var(--primary-bg);
 }
 
 .phone-inner:after {
@@ -38,15 +67,9 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: red;
-}
-
-.phone-inner:before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: blue;
+  position: absolute;
+  bottom: -60px;
+  box-shadow: 0px 1px 1px #ecf0f1, 1px 0px 1px gold;
 }
 
 article {
