@@ -1,0 +1,56 @@
+:root {
+  --primary-bg: rgb(66, 66, 92, 0.9);
+  --secondary-bg: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: serif;
+  background: var(--secondary-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-body {
+  width: 350px;
+  height: 700px;
+  border-radius: 30px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-inner {
+  width: 90%;
+  height: 80%;
+  background: var(--primary-bg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.phone-inner:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.phone-inner:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+article {
+  background-color: rgb(245, 239, 239);
+  border-radius: 5px;
+  padding: 10px;
+}
