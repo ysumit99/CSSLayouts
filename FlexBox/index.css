@@ -1,0 +1,14 @@
+#flex-container {
+  height: 50vh;
+  width: 50vw;
+  background-color: rgb(21, 181, 181);
+  display: flex;
+  align-items: center; /* align vertically */
+  justify-content: center; /* align horizontally */
+}
+
+#flex-child {
+  background-color: rgb(138, 84, 189);
+  width: 200px;
+  height: 200px;
+}
